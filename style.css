@@ -95,8 +95,17 @@ section:last-child { border-bottom: none; }
 .intro-copy p:not(.download-cta):not(.download-note) { font-size: 1.25rem; margin-bottom: 0; }
 .download-cta { font-size: 40px; line-height: 1.15; margin-top: 2.2rem; text-align: center; }
 .download-cta a {
+  display: inline-block;
+  padding: 0.35em 0.7em;
+  border-radius: 0.4rem;
+  background: #f5f7f8;
   color: var(--link-dark);
   white-space: nowrap;
+  transition: background-color 160ms ease;
+}
+.download-cta a:hover {
+  background: #e7ebee;
+  text-decoration: none;
 }
 .download-note { font-size: 0.95rem; color: #4b5563; text-align: center; margin-top: 0.3rem; }
 .hero-cta-row {
